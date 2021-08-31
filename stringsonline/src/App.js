@@ -1,10 +1,20 @@
-import logo from './logo.svg';
+import { Router } from 'react-router';
 import './App.css';
+import { AuthProvider } from './compontens/login/AuthProvider';
+import { Navigation } from './compontens/Navigation/navigation';
+import { Frontpage } from './pages/Frontpage/FrontPage';
+import { Routes } from './Routes/Routes';
 
 function App() {
   return (
-  <h1>stringsonline</h1>
-  )
+    <Frontpage/>
+  //   <AuthProvider>
+  // <Router>
+  //   <Navigation/>
+  //   <Routes/>
+  // </Router>
+  // </AuthProvider>
+  );
 }
 
 export default App;
