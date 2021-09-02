@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
-import { doFetch } from "../../helpers/fetch";
+import { myCostumFetch } from "../../helpers/fetch";
 
 export const ProductNav = () => {
     const [apiData, setApiData] = useState('');
     
     const getProductNav = async () => {
         const url = 'https://api.mediehuset.net/stringsonline/';
-        const result = await doFetch(url)
+        const result = await myCostumFetch(url)
         setApiData(result);
     }
 

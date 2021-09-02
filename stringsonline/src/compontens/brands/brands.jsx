@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react"
-import { doFetch } from "../../helpers/fetch";
+import { myCostumFetch } from "../../helpers/fetch";
+import Style from './brands.module.scss'
 
 export const Brands = () => {
     const [apiData, setApiData] = useState('');
 
     const getBrands = async () => {
         const url = 'https://api.mediehuset.net/stringsonline/brands';
-        const result = await doFetch(url)
+        const result = await myCostumFetch(url)
         setApiData(result);
     }
     useEffect(() => {
@@ -16,7 +17,7 @@ export const Brands = () => {
 
     return(
         <>
-        <h1>Brands</h1>
+        <h1 className={Style.brands}>Brands</h1>
         <ul>{apiData && apiData.items.map((item, key) => {
             return(
                 <li key={key}>
