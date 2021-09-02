@@ -1,6 +1,7 @@
 import Logo from '../../assets/header-bg.png';
 import {Link} from "react-router-dom";
 import Style from './navigation.module.scss';
+import cart_icon from '../../assets/cart-icon.png';
 export function Navigation() {
     return(
         <>
@@ -19,6 +20,9 @@ export function Navigation() {
             <li className={Style.login_button}>
                 <Link to="/login">Login</Link>
             </li>
+            <div>
+                <Link to="/payment"><img className={Style.cart_icon} src={cart_icon} alt="" /></Link>
+            </div>
             
         </ul>
         </nav>

@@ -1,15 +1,16 @@
-.annuler{
-    border: none;
-    border-radius: 10px;
-    background-color: red;
-    color: white;
+@import '../../Styles//theme.scss';
 
-}
-.Send{
+.loginbtn{
     border: none;
     border-radius: 10px;
-    background-color: red;
-    color: white;
+    background-color: $color-light-green;
+    color: $color-dark-green;
+}
+.logoutbtn{
+    border: none;
+    border-radius: 10px;
+    background-color: $color-light-green;
+    color: $color-dark-green;
 }
 
 input{
@@ -17,7 +18,14 @@ input{
     border-radius: 10px;
     border: none;
     width: 30%;
+    display: block;
+    background-color: $color-dark-green;
+    color: $color-light-green;
+   
 }
 input::placeholder{
-    color: black;
+    color: $color-light-green;
+}
+.text_login{
+    color: white;
 }

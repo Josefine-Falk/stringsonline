@@ -6,6 +6,8 @@
 }
 .login_button{
     background-color: $color-light-green;
+    border-radius: 15px;
+ 
 }
 
 .nav_ul{
@@ -28,4 +30,9 @@ li{
         text-decoration: none;
         color: $color-white;
     }
+}
+.cart_icon{
+    position: relative;
+    left: 192%;
+    bottom: 40px;
 }

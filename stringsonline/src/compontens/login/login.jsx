@@ -68,6 +68,7 @@ export function Login() {
       <>
       <form className={Style.loginform} onSubmit={handleSubmit(onSubmit)}>
       <h4>{loginData.username ? `Du er nu logget ind som ${loginData.username}` : message}</h4>
+      <h5 className={Style.text_login}>Indtast brugernavn og adgangskode for at logge ind</h5>
           <input placeholder="Username" name="username" {...register("username", { required: true })}></input>
               {errors.username && <span>Udfyld username</span>}
   
