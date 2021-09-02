@@ -1,5 +1,6 @@
+import Style from './salesPage.module.scss';
 export function Sales() {
     return(
-        <h1>Salgs- og handelbetingelser </h1>
+        <h1 className={Style.sales}>Salgs- og handelbetingelser </h1>
     )
 }
