@@ -13,7 +13,7 @@
 .nav_ul{
      position: relative;
     right: 110%;
-    top: 30%;
+    top: 25%;
 
 }
 
@@ -35,4 +35,24 @@ li{
     position: relative;
     left: 192%;
     bottom: 40px;
+    height: 20px;
+}
+.string_contact{
+    display: inline;
+    color: $color-white;
+    position: relative;
+    left: 120%;
+    bottom: 70px;
+    font-size: 10px;
+    .phonenr{
+        position: relative;
+        left: 170px;
+        bottom: 23px;
+    }
+}
+.search{
+    position: relative;
+    left: 120%;
+    bottom: 90px;
+    width: 200%;
 }

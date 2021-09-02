@@ -23,7 +23,15 @@ export function Navigation() {
             <div>
                 <Link to="/payment"><img className={Style.cart_icon} src={cart_icon} alt="" /></Link>
             </div>
-            
+
+            <div className={Style.string_contact}>
+            <p>SALES@STRINGSONLINE.COM</p>
+            <p className={Style.phonenr}>+45 98 12 22 68</p>
+            </div>
+
+            <div className={Style.search}>
+                <input type="text" placeholder="Indtast søgeord" />
+            </div>
         </ul>
         </nav>
         </>
