@@ -5,7 +5,7 @@ export const ProductNav = () => {
     const [apiData, setApiData] = useState('');
     
     const getProductNav = async () => {
-        const url = 'https://api.mediehuset.net/stringsonline/';
+        const url = 'https://api.mediehuset.net/stringsonline/productgroups';
         const result = await myCostumFetch(url)
         setApiData(result);
     }
@@ -16,10 +16,11 @@ export const ProductNav = () => {
 
     return(
         <section>
-            <ul>{apiData.Data && apiData.items.map((item) => {
+            <h1>Produkter</h1>
+            <ul>{apiData && apiData.items.map((item, key) => {
                 return(
-                    <li key={item.id}>{item.title}
-                    
+                    <li key={key}>
+                    <p>{item.title}</p>
                     </li>
                 )
             })}
