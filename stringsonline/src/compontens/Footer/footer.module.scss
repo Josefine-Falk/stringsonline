@@ -1,4 +1,6 @@
+@import '../../Styles//theme.scss';
 .Footer{
+    background-color: $color-black-grey;
     display: grid;
     justify-items: center;
 }
