@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { myCostumFetch } from "../../helpers/fetch";
+import Style from './productnav.module.scss';
 
 export const ProductNav = () => {
     const [apiData, setApiData] = useState('');
@@ -16,12 +17,14 @@ export const ProductNav = () => {
 
     return(
         <section>
-            <h1>Produkter</h1>
             <ul>{apiData && apiData.items.map((item, key) => {
                 return(
+                    <div className={Style.productnav}>
                     <li key={key}>
                     <p>{item.title}</p>
+                    <p>{item.description}</p>
                     </li>
+                    </div>
                 )
             })}
             </ul>

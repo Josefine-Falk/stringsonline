@@ -20,9 +20,13 @@ export const Brands = () => {
         <h1 className={Style.brands}>Brands</h1>
         <ul>{apiData && apiData.items.map((item, key) => {
             return(
+                <section className={Style.container_brands}>
                 <li key={key}>
                     <h4>{item.title}</h4>
+                    <p>{item.description}</p>
+                    <img src={item.image_fullpath} alt="" />
                 </li>
+                </section>
             )
         })}
         </ul>
