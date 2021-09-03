@@ -24,7 +24,7 @@ export const Brands = () => {
                 <li key={key}>
                     <h4>{item.title}</h4>
                     <p>{item.description}</p>
-                    <img src={item.image_fullpath} alt="" />
+                    <img className={Style.brands_img} src={item.image_fullpath} alt="" />
                 </li>
                 </section>
             )
