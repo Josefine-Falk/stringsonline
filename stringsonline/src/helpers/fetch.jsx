@@ -4,9 +4,9 @@
  * @param {*} options Option Object
  * @returns Array
  */
- export async function myCostumFetch(url, options = null) {
-  if(!options) {
-      options = {
+ export async function myCostumFetch(url, options = null) { //Asynkron funktion som køre med 2 parameter url og options som er ingenting
+  if(!options) { //hvis options er null så sender man en options med en method som er get 
+      options = { //Hvis ikke der er andet så tager den url og laver den til get method
           method: 'GET'
       }
   }
@@ -17,7 +17,7 @@
 
   }
   catch(error) {
-      console.error(error);
+      console.error(error); //Hvis noget går galt fanger den fejlen og logger den ud i console
   }
 }
 

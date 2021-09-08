@@ -1,0 +1,25 @@
+@import '../../Styles//theme.scss';
+
+//ProductList
+.list_title{
+    color: $color-white;
+}
+.list_description{
+    color: $color-white;
+}
+
+
+//ProductDetails
+.details_container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.kategori{
+    color: $color-white;
+}
+.details_name{
+    color: $color-white;
+}
+.details_description{
+    color: $color-white;
+}

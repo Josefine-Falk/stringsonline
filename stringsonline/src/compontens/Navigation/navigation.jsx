@@ -20,6 +20,13 @@ export function Navigation() {
             <li className={Style.login_button}>
                 <Link to="/login">Login</Link>
             </li>
+            <li><Link to="/products">Produkter</Link></li>&nbsp;
+            <li>
+                <Link to="/shoppingcart">Shoppingcart</Link>
+            </li>
+            <li>
+                <Link to="/comments">Kommentarer</Link>
+            </li>
             <div>
                 <Link to="/payment"><img className={Style.cart_icon} src={cart_icon} alt="" /></Link>
             </div>
